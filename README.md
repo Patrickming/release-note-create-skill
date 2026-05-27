@@ -44,7 +44,8 @@ The skill will stop and ask for clarification when the release range, version ju
 
 ```text
 .
-├── SKILL.md
+├── release-note-create/
+│   └── SKILL.md
 ├── README.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
@@ -64,7 +65,7 @@ The skill will stop and ask for clarification when the release range, version ju
 Run the local validation script before publishing changes:
 
 ```bash
-python3 scripts/validate_skill.py SKILL.md
+python3 scripts/validate_skill.py release-note-create/SKILL.md
 ```
 
 The GitHub Actions workflow runs the same check on pushes and pull requests.

@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement to the release note skill.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What release-note workflow or edge case should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the output or workflow change you expect.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Include sample prompts, tags, changelog snippets, or expected Markdown if useful.
+    validations:
+      required: false

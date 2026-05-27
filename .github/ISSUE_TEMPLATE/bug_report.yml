@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem with the skill.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve release-note-create.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+      placeholder: The skill generated...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the prompt, repository state, tags, and any relevant git output.
+      placeholder: |
+        1. In a repository with tags...
+        2. Ask Cursor...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the skill have done instead?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add logs, sample release notes, or anonymized diffs if helpful.
+    validations:
+      required: false
